@@ -1,0 +1,3 @@
+var egyptInfo = {
+	egyptMyth: ""
+};

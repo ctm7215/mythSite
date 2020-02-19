@@ -1,0 +1,104 @@
+<html>
+    <title>World Myth</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	    #banner{
+		    width:56vw;
+			text-align:center;
+			font-family:Coronetscript, cursive;;
+			font-size:3vw;
+			color:#2b94f7;
+			background-image:url('assets/pegasus.jpg');
+			background-repeat:no-repeat;
+			background-size:cover;
+			margin-left:auto;
+			margin-right:auto;
+			height:10vw;
+		}
+		#options{
+		    display:table;
+			width:56vw;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.stories{}
+	    .opts{
+		    display:table-cell;
+			width:6vw;
+			height:1vw;
+			font-size:1vw;
+			background-color:#6e80e6;
+			text-align:center;
+			margin-right:1px;
+			cursor:pointer;
+			border-right:1px solid white;
+		}
+		#story,#deity,#hero{
+		    cursor:pointer;
+			position:relative;
+		}
+		.possibleStories{
+		    display:none;
+			position:relative;
+			background-color:gray;
+			margin-top:0%;
+			width:7vw;
+		}
+		#story:hover .possibleStories{
+		    display:block;
+		}
+		#storyList{
+		    list-style:none;
+			padding-left:0;
+		}
+		#story .possibleStories li:hover{
+		    background-color:white;
+		}
+	</style>
+	<body style="background-color:#d6ebff;">
+	    <div id="main-container" style="width:56vw;margin-left:auto;margin-right:auto;">
+		    <div id="banner"><br />
+			    World Mythology
+			</div>
+			<div id="options">
+			    <div id="greek" class="opts">Greek</div>
+				<div id="celt" class="opts">Celtic</div>
+				<div id="norse" class="opts">Norse</div>
+				<div id="japan" class="opts">Japanese</div>
+				<div id="china" class="opts">Chinese</div>
+				<div id="india" class="opts">Indian</div>
+				<div id="egypt" class="opts">Egyptian</div>
+				<div id="namer" class="opts" style="border-right:none !important;">Native American</div>
+			</div>
+			<div id="content" style="display:flex;width:100%;height:100vw;margin-left:auto;margin-right:auto;">
+				<div id="topics" style="width:7vw;max-height:100%;font-size:0.75vw;text-align:center;background-color:skyblue;display:none;">
+					<br /><u><span id="mythTitle"></span></u><br /><br />
+					<div id="story">Stories
+					    <div id="possibleStories" class="possibleStories">
+							<ul id="storyList" style="list-style:none;">
+							</ul>
+						</div>
+					</div>
+					<div id="deity">Deities</div>
+					<div id="hero">Heroes</div>
+				</div>
+				<div id="about" style="width:56vw;background-color:lightblue;padding-left:1%;padding-right:1%;font-size:1vw;">
+				    <br />
+				    <center><u><b><span id="title">Overview</span></b></u></center>
+					<br /><br />
+					<div id="writing" style="width:100%;max-height:100%;text-align:justify;word-break:break-word;background-color:lightblue;font-size:0.75vw;">
+				    </div>
+			    </div>
+		    </div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/greek_info.js"></script>
+	<script type="text/javascript" src="js/celt_info.js"></script>
+	<script type="text/javascript" src="js/norse_info.js"></script>
+	<script type="text/javascript" src="js/japan_info.js"></script>
+	<script type="text/javascript" src="js/china_info.js"></script>
+	<script type="text/javascript" src="js/india_info.js"></script>
+	<script type="text/javascript" src="js/egypt_info.js"></script>
+	<script type="text/javascript" src="js/namer_info.js"></script>
+	<script type="text/javascript" src="js/myth_info.js"></script>
+</html>
